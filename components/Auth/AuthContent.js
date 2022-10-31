@@ -5,8 +5,6 @@ import { useNavigation } from '@react-navigation/native';
 import FlatButton from '../ui/FlatButton';
 import AuthForm from './AuthForm';
 import { Colors } from '../../constants/styles';
-import SignupScreen from '../../screens/SignupScreen';
-import LoginScreen from '../../screens/LoginScreen';
 
 function AuthContent({ isLogin, onAuthenticate }) {
   const navigation = useNavigation();

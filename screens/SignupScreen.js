@@ -18,9 +18,9 @@ function SignupScreen() {
       const token = await createUser(email, password);
       authCtx.authenticate(token);
     } catch(error) {
-      Alert.alert("Could not create user", "Please check your inputs or try again later.")
+      Alert.alert("Could not create user", "Please check your inputs or try again later.");
+      setIsLoading(false);
     }
-    setIsLoading(false);
   }
 
   if (isLoading) {

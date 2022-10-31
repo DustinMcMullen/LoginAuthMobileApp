@@ -18,10 +18,9 @@ function LoginScreen() {
       const token = await signin(email, password);
       authCtx.authenticate(token);
     } catch(error) {
-      Alert.alert("Authentication failed", "Could not log you in, please check your credentials.")
+      Alert.alert("Authentication failed", "Could not log you in, please check your credentials.");
+      setIsLoading(false);
     }
-    
-    setIsLoading(false);
   }
 
   if (isLoading) {
